@@ -9,7 +9,14 @@ cd $HOME
 git clone git@github.com:Adenialzz/.config.git
 ```
 
-add the following lines to your ~/.zshrc
+and 
+
+```shell
+cd .config
+bash run_config.sh
+```
+
+or manually add the following lines to your ~/.zshrc
 
 ```shell
 source ~/.config/misc/aliases.sh
