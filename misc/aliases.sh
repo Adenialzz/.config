@@ -9,6 +9,10 @@ alias act="conda activate"
 alias pips-thu="pip install -i https://pypi.tuna.tsinghua.edu.cn/simple"
 alias hss="history | grep"
 
+# git
+alias gs="git status"
+alias gd="git diff"
+
 RCFILE=$HOME/.`basename ${SHELL}`rc
 alias ss="source $RCFILE"
 
