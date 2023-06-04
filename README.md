@@ -20,6 +20,7 @@ or manually add the following lines to your ~/.zshrc
 
 ```shell
 source ~/.config/misc/aliases.sh
+source ~/.config/misc/settings.sh
 if [ `basename $SHELL` = zsh ]; then
 	source ~/.config/zsh/vi.zsh
 fi

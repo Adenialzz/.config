@@ -8,6 +8,7 @@ alias vi="nvim"
 alias act="conda activate"
 alias pips-thu="pip install -i https://pypi.tuna.tsinghua.edu.cn/simple"
 alias hss="history | grep"
+alias spo="source $HOME/.config/.mbin/set-proxy"
 
 # git
 alias gs="git status"
