@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# https://zhuanlan.zhihu.com/p/617387545
+
+if [ -z "$1" ]; then
+	echo -e "\033[31mError: URL (like https://huggingface.co/bert-base-uncased) is required\033[0m"
+	exit 1
+
+else
+	URL=$1
+fi
+
+GIT_LFS_SKIP_SMUDGE=1 git clone $URL
+cd `basename $URL`
+git lfs pull --include="*.bin"

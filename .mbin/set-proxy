@@ -1,21 +1,22 @@
 #!/bin/bash
 
-if [ -n "$2" ];then
+if [ -n "$2" ]; then
 	port=$2
 else
 	port=7890
 fi
 
 
-if [ $1 = on ];then
+if [ "$1" = on ]; then
 	echo turning on proxy at $port
 	export http_proxy="http://127.0.0.1:$port"
 	export https_proxy="http://127.0.0.1:$port"
-elif [  $1 = off ];then
+elif [ "$1" = off ]; then
 	echo turning off proxy
 	unset http_proxy
 	unset https_proxy
 else
-	echo $1 option not found. Please set on or off.
+	echo "http_proxy=$http_proxy"
+	echo "https_proxy=$https_proxy"
 fi
 
