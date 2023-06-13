@@ -65,3 +65,6 @@ endfunction
 " TreeSitter Configure
 " TreeSitter Configure END
 
+" keymap
+map <C-q> 0
+map <C-e> $
