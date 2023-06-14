@@ -66,5 +66,7 @@ endfunction
 " TreeSitter Configure END
 
 " keymap
-map <C-q> 0
-map <C-e> $
+nnoremap <C-q> 0
+nnoremap <C-e> $
+nnoremap <C-k> 5k
+nnoremap <C-j> 5j
