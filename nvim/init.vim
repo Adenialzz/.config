@@ -5,6 +5,7 @@ Plug 'neoclide/coc.nvim'
 Plug 'scrooloose/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tomtom/tcomment_vim'
+Plug 'junegunn/vim-easy-align'
 call plug#end()
 unlet g:plug_url_format
 " Plugins END
@@ -59,6 +60,14 @@ function! CheckBackspace() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+" for easy align
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+
 
 " COC Configure END
 
@@ -70,3 +79,4 @@ nnoremap <C-q> 0
 nnoremap <C-e> $
 nnoremap <C-k> 5k
 nnoremap <C-j> 5j
+
